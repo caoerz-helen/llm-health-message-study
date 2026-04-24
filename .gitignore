@@ -1,0 +1,8 @@
+.env
+node_modules/
+data/
+participant_data/
+*.csv
+*.xlsx
+*.json
+.DS_Store
