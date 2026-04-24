@@ -1,0 +1,23 @@
+{
+  "name": "llm-health-message-backend",
+  "version": "1.0.0",
+  "description": "Minimal backend for generating personalized exercise encouragement messages for Qualtrics.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "qualtrics",
+    "openai",
+    "health-message-study"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "openai": "^5.12.2"
+  }
+}
