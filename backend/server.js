@@ -95,7 +95,14 @@ app.post("/generate-message", async (req, res) => {
 
     return res.json({ llm_reply: llmReply });
   } catch (error) {
-    console.error("Error in /generate-message:", error.message);
+    console.error("Error in /generate-message:", {
+      message: error.message,
+      status: error.status,
+      code: error.code,
+      type: error.type,
+      responseData: error.response?.data,
+      stack: error.stack
+    });
     return res.status(500).json({
       error: "Failed to generate message."
     });
