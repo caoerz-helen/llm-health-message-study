@@ -13,7 +13,7 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
   // Replace with your deployed URL, for example:
   // https://llm-health-message-backend.onrender.com
-  var BACKEND_BASE_URL = "https://YOUR-BACKEND-URL";
+  var BACKEND_BASE_URL = "https://llm-health-message-study.onrender.com";
   var ENDPOINT = BACKEND_BASE_URL + "/generate-message";
 
   var fallbackMessage =
